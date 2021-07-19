@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.corpo {
+    display: grid;
+    justify-content: center;
+    padding-top: 7.5rem;
+}
+
+.cars {
+    display: flex;
+    max-width: 1440px;
+}
+
+.sedans {
+    background-color: hsl(31, 77%, 52%);
+    min-width: 15rem;
+    padding-left: 2.8125rem;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+    
+}
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    min-width: 15rem;
+    padding-left: 2.8125rem;
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    min-width: 15.625rem;
+    padding-left: 2.8125rem;
+    border-top-right-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
+
+.cars-img {
+    padding: 2.8125rem 0 0 0;
+}
+
+.cars-title {
+    padding: 2.1875rem 0 0 0;
+    text-transform: uppercase;
+    font-family: "Big shoulders Display";
+    font-weight: 700;
+    font-size: 1.875rem;
+    color: hsl(0, 0%, 95%)
+}
+
+.cars-paragraph {
+    padding: 1.875rem 0 0 0;
+    font-size: 0.9375rem;
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.cars-btn {
+    padding: 3.75rem 0 2.5rem 0;
+}
+
+.btn {
+    cursor: pointer;
+    padding: 0.625rem 1.5616rem;
+    border-radius: 5rem;
+    background: unset;
+    border: 0.125rem solid #FFF;
+    color: hsl(0, 0%, 95%);
+}
+
+.btn:hover {
+    box-shadow: 0 1rem 1rem #0006;
+    transition: 0.3s all ease;
+}
+
+.btn:focus {
+    background: hsl(0, 0%, 95%);
+}
+
+.sedans button:focus {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs button:focus {
+    color: hsl(184, 100%, 22%);
+}
+
+.luxury button:focus {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 750px) {
+    .cars {
+        flex-direction: column;
+    }
+    .sedans {
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 0.625rem;
+    }
+    .luxury {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 0.625rem;
+    }
+    .corpo {
+        padding-bottom: 7.5rem;
+    }
+    .cars-btn {
+        padding-top: 1.25rem;
+    }
+}
+
+.attribution {
+    text-align: center;
+    padding-top: 3.125rem;
+}
