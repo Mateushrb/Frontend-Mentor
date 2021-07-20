@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    background-color: hsl(233, 47%, 7%);
+}
+ 
+.card {
+    display: flex;
+    justify-content: center;
+    padding-top: 12.5rem;
+}
+
+.main-card * {
+    background-color: hsl(244, 38%, 16%);
+}
+
+.main-card {
+    width: 420px;
+    background-color: hsl(244, 38%, 16%);
+    padding-left: 3.75rem;
+    padding-top: 3.75rem;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+}
+
+.title {
+    font-size: 32px;
+    font-family: "Inter";
+    font-weight: 700;
+    width: 80%;
+    color: hsl(0, 0%, 100%);
+}
+
+.paragraph {
+    padding-top: 1.5625rem;
+    font-size: 13px;
+    font-family: "Inter";
+    font-weight: 400;
+    line-height: 1.4375rem;
+    width: 80%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.contador {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 3.75rem;
+}
+
+.contador h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 700;
+}
+
+.contador p {
+    color: hsla(0, 0%, 100%, 0.6);
+    padding-top: 0.3125rem;
+    font-size: 11px;
+    font-family: "Inter";
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+@media (min-width: 720px) {
+    .img-desktop {
+        width: 480px;
+        height: 100%;
+        border-top-right-radius: 0.625rem;
+        border-bottom-right-radius: 0.625rem;
+        filter: invert(35%) sepia(100%) saturate(165%) hue-rotate(235deg) brightness(60%) contrast(148%);
+    }
+    
+    .img-mobile {
+        display: none;
+    }
+}
+
+.insights {
+    color: hsl(277, 64%, 61%);
+}
+
+@media (max-width: 719px) {
+    .card {
+        display: flex;
+        flex-direction: column-reverse;
+        place-items: center;
+        padding-top: 12.5rem;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+    .main-card {
+        width: 23.4375rem;
+        background-color: hsl(244, 38%, 16%);
+        padding-left: 0rem;
+        padding-top: 3.75rem;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        border-radius: 0 0 0.625rem 0.625rem;
+    }
+    .img-mobile {
+        width: 375px;
+        vertical-align: middle;
+        border-radius: 0.625rem 0.625rem 0 0;
+        filter: invert(35%) sepia(100%) saturate(165%) hue-rotate(235deg) brightness(60%) contrast(148%);
+    }
+    
+    .paragraph {
+        width: 14.375rem;
+    }
+    
+    .contador {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        border-radius: 0 0 0.625rem 0.625rem;
+        padding-bottom: 1.25rem;
+    }
+
+    .contador h2 {
+        padding-bottom: 0.3125rem;
+    }
+
+    .contador p {
+        padding-bottom: 1.875rem;
+    }
+    
+    .attribution {
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 6.25rem;
+    }
+}
+
+.attribution {
+    text-align: center;
+    color: #FFF;
+    padding-top: 3.125rem;
+}
