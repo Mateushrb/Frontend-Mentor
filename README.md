@@ -4,3 +4,5 @@ Repositório para hospedar os códigos dos exercícios do site "Frontend Mentor"
 https://mateushrb-3-column-preview.surge.sh/
 
 https://mateushrb-stats-preview-card.surge.sh/
+
+https://mateushrb-profile-card-component-main.surge.sh/
