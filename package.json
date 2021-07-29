@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "npx live-server stats-preview-card-component-main/",
+    "start": "npx live-server profile-card-component-main/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

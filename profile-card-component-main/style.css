@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    --color-primary: hsl(0, 0%, 59%);
+}
+
+.corpo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+ }
+
+.background__top {
+    right: 51vw;
+    bottom: 21vw;
+    position: fixed;
+}
+
+.background__bottom {
+    top: 50vh;
+    left: 50vw;
+    position: fixed;
+}
+
+.container {
+    background-color: #fff;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 375px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.imagem-perfil {
+    text-align: center;
+    padding-top: 95px;
+}
+
+.imagem-perfil img {
+    border-radius: 50%;
+    border: solid #fff 5px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    font-family: "Kumbh Sans";
+    font-weight: 700;
+}
+
+.idade {
+    margin-left: 10px;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+.city {
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: "Kumbh Sans";
+    color: var(--color-primary);
+    font-size: 15px;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-around;
+    border-top: hsl(0, 0%, 94%) solid 2px;
+    padding: 30px 0;
+}
+
+.counter__info {
+    text-align: center;
+}
+
+.counter__number {
+    font-family: "Kumbh Sans";
+    font-weight: 700;
+}
+
+.counter__word {
+    font-family: "Kumbh Sans";
+    color: var(--color-primary);
+    padding-top: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.attribution {
+    font-size: 15px;
+    text-align: center;
+    z-index: 1;
+    padding-top: 10px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 320px;
+    }
+
+    .background__top {
+        right: 40vw;
+        bottom: 80vw;
+    }
+    
+    .background__bottom {
+        top: 41vh;
+        left: 40vw;
+    }
+
+    .attribution {
+        font-size: 12px;
+    }
+}
