@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.pagina {
+    display:grid;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 8rem auto;
+    width: 77%;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-template-areas: "daniel daniel jonathan kira" 
+    "jeanette patrick patrick kira";
+    justify-content: center;
+    grid-gap: 1.875rem;
+}
+
+.perfil {
+    display: flex;
+}
+
+
+
+
+
+.daniel {
+    grid-area: daniel;
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-size: 124px;
+    background-repeat: no-repeat;
+    background-position: right 6.125rem top;
+}
+
+.jonathan {
+    grid-area: jonathan;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.jeanette {
+    grid-area: jeanette;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.patrick {
+    grid-area: patrick;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.kira {
+    grid-area: kira;
+    background-color: hsl(0, 0%, 100%);
+}
+
+
+
+
+
+.card__borda {
+    border-radius: .625rem;
+    padding: 2.0625rem;
+}
+
+.perfil {
+    padding-bottom: 1.25rem;
+}
+
+.perfil img {
+    border-radius: 3.125rem;
+    width: 2.1875rem;
+    height: 2.1875rem;
+    margin-right: 1.25rem;
+}
+
+
+
+.daniel__img {
+    border: solid hsl(263, 38%, 61%) 2px;
+}
+
+.patrick__img {
+    border: solid hsl(263, 55%, 52%) 2px;
+}
+
+
+
+.identificacao__homem h1 {
+    font-size: .9375rem;
+    font-family: "Barlow Semi Condensed";
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+
+.identificacao__mulher h1 {
+    font-size: .9375rem;
+    font-family: "Barlow Semi Condensed";
+    font-weight: 500;
+}
+
+
+
+.identificacao__homem h2 {
+    font-size: .8125rem;
+    opacity: 50%;
+    font-family: "Barlow Semi Condensed";
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+
+.identificacao__mulher h2 {
+    font-size: .8125rem;
+    opacity: 50%;
+    font-family: "Barlow Semi Condensed";
+    font-weight: 500;
+}
+
+
+
+.titulo__homem {
+    font-family: "Barlow Semi Condensed";
+    font-weight: 600;
+    font-size: 1.125rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.25rem;
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 1.25rem;
+}
+
+.titulo__mulher {
+    font-family: "Barlow Semi Condensed";
+    font-weight: 600;
+    font-size: 1.125rem;
+    letter-spacing: 0.0625rem;
+    line-height: 1.25rem;
+    color: hsl(0, 100%, 0%);
+    padding-bottom: 1.25rem;
+    opacity: 70%;
+}
+
+
+
+.paragrafo__homem {
+    opacity: 70%;
+    font-family: "Barlow Semi Condensed";
+    font-weight: 300;
+    font-size: .8125rem;
+    letter-spacing: .0625rem;
+    line-height: .9375rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.paragrafo__mulher {
+    opacity: 70%;
+    font-family: "Barlow Semi COndensed";
+    font-weight: 500;
+    font-size: .8125rem;
+    line-height: .9375rem;
+    letter-spacing: .0625rem;
+    color: hsl(0, 100%, 0%)
+}
+
+.attribution {
+    font-size: .6875rem;
+    text-align: center;
+    padding-top: 1.25rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width: 900px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .daniel {
+        background-position: right .9375rem top;
+    }
+}
