@@ -19,8 +19,8 @@ https://mateushrb-testimonials-grid-section-main.surge.sh/
 Exercício para inserção de códigos e remoção, via JavaScript, afim de criar uma lista e também poder remover os elementos.
 https://mateushrb-todolist.surge.sh/
 
-Exercício para inserção de um temporizador 
+Exercício para inserção de um temporizador.
 https://mateushrb-pomofocus.surge.sh/
 
-Exercício para utilizar a Weather API
+Exercício para utilizar a Weather API.
 https://mateushrb-previsao-do-tempo.surge.sh/
