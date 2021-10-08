@@ -9,3 +9,11 @@ https://mateushrb-stats-preview-card.surge.sh/
 https://mateushrb-profile-card-component-main.surge.sh/
 
 https://mateushrb-testimonials-grid-section-main.surge.sh/
+
+# Outros Exercícios
+
+https://mateushrb-previsao-do-tempo.surge.sh/
+
+https://mateushrb-pomofocus.surge.sh/
+
+https://mateushrb-todolist.surge.sh/
