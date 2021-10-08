@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    background-color:rgb(60, 219, 211);
+    text-align: center;
+    width: 30vw;
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    padding-bottom: 3vw;
+    padding-top: 2vw;
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+.container h1 {
+    font-size: 3vw;
+    padding-bottom: 2vw
+}
+.entrada {
+    margin-bottom: 1vw;
+}
+.add {
+    padding: 0.2vw;
+}
+.item {
+    padding: 0.2vw;
+}
+.lista {
+    border: 1px solid black;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1vw 0.5vw 1vw;
+}
+.lista p {
+    padding: 1vw;
+    font-size: 1.5vw;
+}
+.lista button {
+    margin: 0.8vw;
+    padding: 0.2vw;
+}

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: rgb(149, 63, 247);
+    color: #fff;
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding-top: 1.875rem;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    padding-bottom: 3.125rem;
+}
+
+.sub-title {
+    padding-bottom: 1.25rem;
+    font-size: 0.875rem;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(174, 112, 255);
+    width: 500px;
+    height: 300px;
+    align-items: center;
+    border-radius: 0.3125rem;
+}
+
+.contagem {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    padding-top: 1.875rem;
+    padding-bottom: 1.25rem;
+}
+
+#tarefa {
+    width: 125px;
+    margin: 1.25rem;
+    padding: 0.3125rem;
+    background: unset;
+    border: solid 2px rgb(91, 45, 145);
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 1;
+    font-weight: bold;
+}
+
+input:focus {
+    outline: 0;
+}
+
+#btn-submit {
+    width: 139px;
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    color: rgb(212, 212, 212);
+    margin-bottom: 1.875rem;
+    cursor: pointer;
+    background-color: rgb(149, 63, 247);
+    border: solid 2px rgb(97, 0, 167);
+    border-radius: 0.3125rem;
+    transition: .3s;
+}
+
+#btn-submit:hover {
+    background-color: rgb(149, 31, 236);
+    color: #FFF;
+}
+
+.concluidas {
+    margin: 0.9375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.concluidas p {
+    padding-bottom: 0.625rem;
+    font-size: 1.375rem;
+}
+
+.concluidas hr {
+    width: 500px;
+    margin-bottom: 0.9375rem;
+}
+
+#tarefa-concluida {
+    display: flex;
+    flex-direction: column;
+}
+
+#tarefa-concluida span {
+    background-color:rgb(91, 45, 145);
+    width: 500px;
+    text-align: center;
+    padding: 0.625rem 0 0.625rem 0;
+    margin-bottom: 0.625rem;
+    border-radius: 0.3125rem;
+    font-size: 1.125rem;
+}
+
+#executando {
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* 149, 31, 236 */
+
+@media only screen and (max-width: 600px) {
+    body {
+        width: 100vw;
+    }
+    .container {
+        width: 320px;
+    }
+    .display {
+        width: 320px;
+    }
+    .concluidas hr {
+        width: 320px;
+    }
+    #tarefa-concluida span {
+        width: 320px;
+    }
+    #executando {
+        font-size: 14px;
+    }
+}

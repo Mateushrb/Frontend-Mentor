@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/bd6ef9b3f8.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
+    <title>Cartão do tempo</title>
+</head>
+<body>
+    <nav>
+        <section class="navbar">
+            <div class="logo">
+                <p>Clima <br>tempo</p>
+            </div>
+            <div>
+                <form>
+                    <input id="search_city" type="text" placeholder="Busque uma cidade" name="city">
+                    <button id="search_btn" type="button">Buscar</button>
+                </form>
+                <h1 class="titulo">Previsão do tempo</h1>
+            </div>
+            <div class="icon_clima">
+                <i class="far fa-grin-beam-sweat smile"></i>
+            </div>
+        </section>
+    </nav>
+    <section class="titulo_1">
+        <i class="fas fa-arrow-alt-circle-up arrow-up" style="padding-top: 60px;"></i>
+        <h1>Consulte a previsão do tempo da sua cidade</h1>
+    </section>
+    <main>
+        <h2 id="dia_0">Hoje</h2>
+        <h3 id="city"></h3>
+        <section class="hoje">
+            <article class="temperatura" id="temperatura_atual">
+                <!-- <div class="temperatura_atual"> -->
+                    <p>Temperatura</p>
+                    <p class="dados"><i class="fas fa-question"></i></p>
+                    <p id="icon_temp_atual"><i class="fas fa-question"></i></p>
+                    <p>Condição: ?</p>
+                <!-- </div> -->
+            </article>
+            <article class="caracteristicas">
+                <div class="sensacao_termica">
+                    <span><i class="fas fa-question"></i></span>
+                    <p>Sensação térmica:</p>
+                    <span class="dados">?</span>
+                </div>
+                <div class="umidade">
+                    <span><i class="fas fa-question"></i></span>
+                    <p>Úmidade atual:</p>
+                    <span class="dados">?</span>
+                </div>
+                <div class="vento">
+                    <span><i class="fas fa-question"></i></span>
+                    <p>Velocidade do vento:</p>
+                    <span class="dados">?</span>
+                </div>
+                <div class="pressao">
+                    <span><i class="fas fa-question"></i></span>
+                    <p>Pressão:</p>
+                    <span class="dados">?</span>
+                </div>
+                <div class="nascer_sol">
+                    <span><i class="fas fa-question"></i></span>
+                    <p>Nascer do Sol:</p>
+                    <span class="dados">?</span>
+                </div>
+                <div class="por_sol">
+                    <span><i class="fas fa-question"></i></span>
+                    <p>Pôr do Sol:</p>
+                    <span class="dados">?</span>
+                </div>
+            </article>
+        </section>
+        <section class="proximas">
+
+            <article class="amanha" id="dia_1">
+                <h2>Dia</h2>
+                <div class="minmax" id="amanha">
+                    <div class="max" id="amanha_max">
+                        <p>Máx:</p>
+                        <span class="dados">?</span>
+                    </div>
+                    <span><i class="fas fa-question"></i></span>
+                    <div class="min" id="amanha_min">
+                        <p>Mín:</p>
+                        <span class="dados">?</span>
+                    </div>
+                    <span><i class="fas fa-question"></i></span>
+                </div>
+                <p id="icon_temp_atual"><i class="fas fa-question"></i></p>
+                <p class="proximas_condicao">Condição: ?</p>
+            </article>
+
+            <article class="depois_amanha" id="dia_2">
+                <h2>Dia</h2>
+                <div class="minmax" id="depois_amanha">
+                    <div class="max" id="depois_amanha_max">
+                        <p>Máx:</p>
+                        <span class="dados">?</span>
+                    </div>
+                    <span><i class="fas fa-question"></i></span>
+                    <div class="min" id="depois_amanha_min">
+                        <p>Mín:</p>
+                        <span class="dados">?</span>
+                    </div>
+                    <span><i class="fas fa-question"></i></span>
+                </div>
+                <p id="icon_temp_atual"><i class="fas fa-question"></i></p>
+                <p class="proximas_condicao">Condição: ?</p>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <div class="attribution"> 
+            Coded by <a href="https://github.com/Mateushrb" target="_blank">Mateus Henrique</a>.
+        </div>
+    </footer>
+    
+</body>
+</html>

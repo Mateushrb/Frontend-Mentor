@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+}
+
+nav {
+    background-color:rgba(52, 99, 255, 0.6); 
+    padding: 10px 50px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.titulo {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 32px;
+    color:rgba(0, 0, 255, 0.8)
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    color:rgba(0, 0, 255, 0.8);
+}
+
+.smile {
+    font-size: 40px;
+    color:rgba(0, 0, 255, 0.8);
+}
+
+#search_city, #search_btn {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#search_city {
+    border-radius: 20px;
+    border: solid 2px rgba(21, 21, 255, 0.555);
+    background-color: azure;
+}
+
+input:focus {
+    outline: 0;
+}
+
+#search_btn {
+    border-radius: 20px;
+    border: solid 2px rgba(21, 21, 255, 0.555);
+    background-color: azure;
+    color: rgba(21, 21, 255, 0.555);
+    cursor: pointer;
+    font-weight: 700;
+    transition: .1s;
+}
+
+#search_btn:hover {
+    background-color: rgba(227, 255, 246, 0.678);
+}
+#search_btn:active {
+    background-color:rgba(73, 73, 255, 0.438);
+}
+
+@media only screen and (max-width: 599px) {
+    nav {
+        padding: 10px 0px;
+        align-items: center;
+    }
+    form {
+        display: flex;
+    }
+    #search_city, #search_btn {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .logo {
+        display: none;
+    }
+
+    .icon_clima {
+        display: none;
+    }
+}
