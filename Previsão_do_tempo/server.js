@@ -2,27 +2,27 @@ const express = require('express');
 const app = express();
 
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/src/index.html");
+    res.sendFile(__dirname + "./index.html");
 });
 
 app.get("/style.css", function(req, res) {
-    res.sendFile(__dirname + "/src/style.css");
+    res.sendFile(__dirname + "./style.css");
 });
 
 app.get("/css/nav.css", function(req, res) {
-    res.sendFile(__dirname + "/src/css/nav.css");
+    res.sendFile(__dirname + "./css/nav.css");
 });
 
 app.get("/css/main.css", function(req, res) {
-    res.sendFile(__dirname + "/src/css/main.css");
+    res.sendFile(__dirname + "./css/main.css");
 });
 
 app.get("/css/footer.css", function(req, res) {
-    res.sendFile(__dirname + "/src/css/footer.css");
+    res.sendFile(__dirname + "./css/footer.css");
 })
 
 app.get("/script.js", function(req, res) {
-    res.sendFile(__dirname + "/src/script.js");
+    res.sendFile(__dirname + "./script.js");
 });
 
 /* const server = http.createServer(function(req, res){
