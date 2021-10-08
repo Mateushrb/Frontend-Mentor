@@ -6,6 +6,7 @@ body {
     width: 100vw;
     display: flex;
     justify-content: center;
+    background-color: rgba(127, 255, 212, 0.534);
 }
 .container {
     background-color:rgb(60, 219, 211);
@@ -38,6 +39,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0 1vw 0.5vw 1vw;
+    background-color: rgb(0, 190, 190);
 }
 .lista p {
     padding: 1vw;
